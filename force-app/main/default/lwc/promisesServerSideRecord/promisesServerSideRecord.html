@@ -1,0 +1,35 @@
+<template>
+  <h1>Account Contact record ...</h1>  
+  <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={contData}
+                show-row-number-column
+                row-number-offset={rowOffset}
+                hide-checkbox-column
+                columns={columns1}>
+        </lightning-datatable>
+    </div>
+  <h1>Account opportunity record ...</h1>  
+   <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={oppData}
+                show-row-number-column
+                row-number-offset={rowOffset}
+                hide-checkbox-column
+                columns={columns2}>
+        </lightning-datatable>
+    </div>
+   <h1>Account case record ...</h1>  
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={caseData}
+                show-row-number-column
+                row-number-offset={rowOffset}
+                hide-checkbox-column
+                columns={columns3}>
+        </lightning-datatable>
+    </div> 
+</template>

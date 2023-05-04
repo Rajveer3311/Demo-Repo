@@ -1,6 +1,6 @@
 /*****************************************************************************************************************
 * Name         : AccountTriggerClass
-* @author      : Rj-Rajveer
+* @author      : Rj-Rajveer3311
 * @date        : Sept 09, 2020
 * @description : Account ownership is private then billing country not null...
 ******************************************************************************************************************/

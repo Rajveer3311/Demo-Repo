@@ -1,0 +1,500 @@
+<apex:component >
+    <apex:form >
+        <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        </head>
+        <div class="slds-m-top_large" style="overflow-x:hidden ">
+            <div style="border-top: 3px solid #00a1e0;"> </div>
+            <div class="slds-grid slds-gutters   slds-border_top">
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_12-of-12">
+                            <div class="slds-m-left_xx-large slds-m-top_xx-large"><br/><br/>
+                                <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/customer360-logo.png" alt="" width="250" height="140"/>
+                            </div><br/>
+                        </div>
+                        <div class="slds-col slds-size_12-of-12 slds-m-left_xx-large">
+                            <div class="slds-text-heading_large"  style="font-size:50px;color: #032d60;"><b>ENROLL SALESFORCE BOOTCAMP</b></div>
+                        </div><br/>
+                        <div class="slds-col slds-size_12-of-12 slds-m-left_xx-large">
+                            <p class="slds-text-color_weak slds-text-heading_medium" style="">
+                                Salesforce Academy is comprised of influential, driven Salesforce Evangelists 
+                                who take pride in delivering results. We make your success our success. 
+                                The collective Salesforce Academy Team has years of experience in CRM and large 
+                                scale Salesforce organization management and have executed tens of successful 
+                                Salesforce and other CRM-related projects.
+                                <br/>
+                                <br/>
+                                We developed our Student Dreams into a Final Product. 
+                            </p>
+                        </div><br/><br/>
+                        <div class="slds-col slds-size_12-of-12 slds-m-left_xx-large">
+                            <apex:commandButton styleclass="slds-button slds-button_brand" value="ENROLL NOW" action="/apex/testPage" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="slds-button slds-button_outline-brand ">FIND A CUSTOMISED SOLUTION</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slds-col slds-size_2-of-3">
+                    <div class="slds-col " style="">    
+                        <img src="{!$Resource.MenImage}" width="75%" />
+                    </div>
+                </div>
+            </div>
+            <!-- div2 -->
+            <div class="slds-grid slds-wrap slds-m-top_xx-large">
+                <div class="slds-col slds-size_5-of-12 slds-m-left_xx-large slds-text-align_right slds-m-top_large" style="">
+                    <img src="https://assets.zoom.us/generic-images/misc/video-thumbnails/meetings-1.png" class="" width="550px" style="border-radius: 20px;"/>
+                </div>
+                <div class="slds-col slds-size_5-of-12 slds-m-left_xx-large">
+                    <div class="" style=" font-size:50px; color: #032d60;"><b>Focus on your customer, grow your business.</b> </div><br/>
+                    <p class="slds-text-color_weak slds-text-heading_medium">
+                        Customers today expect more from your business. With a shared view of your customers, 
+                        teams can better meet these demands. So sales close quicker. Marketing hits the mark. 
+                        Service comes with more smiles. And customer loyalty drives business growth.
+                    </p>
+                </div>
+            </div>
+            <!-- Extra -->
+            <div class="slds-grid slds-wrap slds-m-top_xx-large">
+                <div class="slds-col slds-size_5-of-12 slds-m-left_xx-large " style="">
+                    <div class="slds-col slds-size_12-of-12 slds-m-left_xx-large">
+                        <div class="slds-text-heading_large"  style="font-size:50px;color: #032d60;"><b>What is Salesforce used for?</b></div>
+                    </div>
+                    
+                    <div class="slds-col slds-size_12-of-12 slds-m-left_xx-large slds-m-top_xx-large">
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_2-of-12 ">
+                                <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/what-is-salesforce/whatis-icon-marketing.png"/>
+                            </div> 
+                            <div class="slds-col slds-size_10-of-12">
+                                <span style=" color: #032d60;" class="slds-text-heading_small"> Engage customers with relevant, empathetic digital marketing from anywhere.</span><br/>
+                                <a  class="slds-text-heading_small">LEARN MORE ABOUT MARKETING ></a>
+                            </div>
+                        </div><br/>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_2-of-12 ">
+                                <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/what-is-salesforce/whatis-icon-sales.png"/>
+                            </div> 
+                            <div class="slds-col slds-size_10-of-12">
+                                <span style=" color: #032d60;" class="slds-text-heading_small">Sell smarter and grow your business faster from anywhere.</span><br/>
+                                <a  class="slds-text-heading_small">LEARN MORE ABOUT SALES > </a>
+                            </div>
+                        </div><br/>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_2-of-12 ">
+                                <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/what-is-salesforce/whatis-icon-commerce.png"/>
+                            </div> 
+                            <div class="slds-col slds-size_10-of-12">
+                                <span style=" color: #032d60;" class="slds-text-heading_small">Quickly launch and scale ecommerce built around your customer — from anywhere.</span><br/>
+                                <a  class="slds-text-heading_small">LEARN MORE ABOUT COMMEERCE > </a>
+                            </div>
+                        </div>  <br/>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_2-of-12 ">
+                                <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/what-is-salesforce/whatis-icon-service.png"/>
+                            </div> 
+                            <div class="slds-col slds-size_10-of-12">
+                                <span style=" color: #032d60;" class="slds-text-heading_small">Provide great customer service from anywhere.</span><br/>
+                                <a  class="slds-text-heading_small">LEARN MORE ABOUT CUSTOMER SERVICE > </a>
+                            </div>
+                        </div>  <br/>
+                        <div class="slds-grid slds-wrap">
+                           <div class="slds-col slds-size_2-of-12 ">
+                                <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/what-is-salesforce/whatis-icon-apps.png"/>
+                            </div> 
+                           <div class="slds-col slds-size_10-of-12">
+                                <span style=" color: #032d60;" class="slds-text-heading_small">Go digital fast and empower your teams to work from anywhere.</span><br/>
+                                <a  class="slds-text-heading_small">LEARN MORE ABOUT APP BUILDING > </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_5-of-12 slds-m-horizontal_xx-large slds-text-align_center">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/sfdc-c360-wheel-1.png"/>
+                    
+                </div>
+            </div>
+            
+            <!-- div 3 -->
+            <div class="slds-grid slds-wrap slds-m-top_xx-large">
+                <div class="slds-col slds-size_5-of-12 slds-m-left_xx-large " style="">
+                    <div class="slds-col slds-size_12-of-12 slds-m-left_xx-large">
+                        <div class="slds-text-heading_large"  style="font-size:50px;color: #032d60;"><b>One platform.Endless possibilities.</b></div>
+                    </div>
+                    
+                </div>
+                <div class="slds-col slds-size_5-of-12 slds-m-horizontal_xx-large">
+                    <span class="slds-text-color_weak slds-text-heading_medium"> Customer 360 is the #1 
+                        <a href="/in/crm/what-is-crm/?d=cta-body-promo-23">customer relationship management</a> (CRM) platform. 
+                        There’s a best-in-class app for every phase of your customer’s journey, from lead to loyalty. The more 
+                        apps you add, the greater the rewards. When you also integrate all your data and add analytics into the mix, 
+                        the real magic of Customer 360 takes hold. 
+                    </span><br/><br/>
+                    <button class="slds-button slds-button_brand ">TAKE A TOUR</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="slds-button slds-button_outline-brand ">FIND YOUR SOLUTION</button>
+                </div>
+            </div>
+            <!-- div 4 -->
+            <div style="">
+                
+                <apex:image id="theImage" value="{!$Resource.ProductGrow}" width="100%" />
+            </div>
+            <!-- div 5 -->
+            <div class="slds-grid slds-wrap slds-m-top_xx-large">
+                <div class="slds-col slds-size_5-of-12 slds-m-left_xx-large slds-text-color_weak slds-text-heading_medium " style="">
+                    <h1 class="slds-m-left_xx-large" style="font-size:30px; color: #032d60;"><b> Empower your employees.</b></h1> <br/>
+                    <div class="slds-m-left_xx-large">
+                        Give everyone the tools to deliver better customer experiences. 
+                        <a href="/in/products/slack/overview/?d=cta-body-promo-114">Slack</a> 
+                        helps employees connect better with each other and the apps they use every day, from anywhere. 
+                        <a href="/in/products/einstein/overview/?d=cta-body-promo-24">Einstein AI</a> 
+                        lets everyone work more productively, engage with empathy, and scale loyalty-building customer service. And 
+                        <a href="/in/products/mytrailhead/overview/?d=cta-body-promo-26">Trailhead</a>, 
+                        our one-of-a-kind learning hub offers free, fun “trails” to help your workforce learn essential skills.<br/>
+                        
+                    </div>
+                </div>
+                <div class="slds-col slds-size_5-of-12 slds-m-horizontal_xx-large">
+                    <img src="//www.salesforce.com/content/dam/web/en_us/www/images/products/empower-employees-desktop.jpg"/>
+                </div>
+            </div><br/><br/><br/>
+            <!-- div 6 -->
+            <div class="slds-grid slds-grid_vertical ">
+                <div class="slds-col slds-text-align_center" >
+                    <p style="font-size:30px;color: #032d60;"><b>See the world through your customers’ eyes.</b></p>
+                    <h1 class="slds-text-color_weak slds-text-heading_medium slds-m-horizontal_xx-large">
+                        Get a single, shared view of your customers. With knowledge of your customers’<br/> history, 
+                        interests, and even frustrations, you can begin to serve up experiences better <br/> tailored to their needs and elevate how
+                        they see your brand.
+                    </h1>
+                </div>
+            </div>
+            
+            <!-- div 7 -->
+            
+            <div class="slds-grid slds-grid_vertical slds-m-top_xx-large">
+                <div class="slds-col  slds-text-align_center">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/see-the-world-2.jpg"/>
+                </div>
+            </div>
+            
+            <!-- div 8 -->
+            
+            
+            <div class="slds-grid slds-m-top_xx-large">
+                <div class="slds-col slds-m-left_xx-large">
+                    <div class="slds-grid ">
+                        <div class="slds-col slds-text-align_right slds-m-top_medium">
+                            <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/bird.jpg"/>
+                        </div>  
+                        <div class="slds-col slds-m-left_large slds-m-top_medium slds-text-heading_small ">
+                            <p>
+                                Learn how you can launch your digital transformation to <br/> unite your business around the customer.
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="slds-col slds-p-horizontal_medium slds-m-top_medium">
+                    <button class="slds-button slds-button_brand slds-size_7-of-12">READ OUR TRANSFORMATION BOOK</button>
+                </div>
+            </div>
+            <!-- div 9 -->
+            
+            <div class="slds-grid slds-grid_vertical slds-m-top_xx-large  slds-text-align_center" style="position: relative; text-align: center;">
+                <apex:image id="theImage3" value="{!$Resource.Einstein}" width="100%" />
+                <div class="slds-col slds-text-align_center" style=" position: absolute;  top: 20%; left: 50%; transform: translate(-50%, -50%);">
+                    <p style="font-size:30px;color: #032d60;"><b>Embrace all your data in a big group hug.</b></p>
+                    <span class="slds-text-color_weak slds-text-heading_medium ">  The more you know, the better you grow. Customer 360 gives everyone in your <br/>company the ability to access crucial data and make smarter, faster decisions.   </span><br/><br/>
+                    <p>Integrate all your data, inside and outside your CRM, with <a href="/in/products/integration/overview/?d=cta-body-promo-28">MuleSoft</a>. Automate tasks and get suggested next <br/> actions with <a href="/in/products/einstein/overview/?d=cta-body-promo-29">Einstein AI</a>. Get powerful, real-time analytics and data visualisations with <a href="/in/products/analytics/overview/?d=cta-body-promo-30">Tableau</a>.</p>
+                </div>        
+            </div><br/><br/>
+            
+            <!-- div 10 -->
+            <div class="slds-grid slds-grid_vertical ">
+                <div class="slds-col slds-text-align_center" >
+                    <p style="font-size:40px;color: #032d60;"><b>Any industry, any size, every advantage.</b></p>
+                    <h1 class="slds-text-color_weak slds-text-heading_medium slds-m-horizontal_xx-large">
+                        Big or small. Widget maker or purveyor of digital wizardry. We have specialised solutions, designed <br/>in close collaboration with people working in your industry, to support the capabilities you most <br/>need to thrive and grow. And we have an extensive network of ecosystem partners offering apps<br/> and guidance to help you craft a truly customised experience.
+                    </h1> <br/><br/>
+                    <button class="slds-button slds-button_brand " >SEE ALL INDUSTRIES</button>
+                    
+                </div>
+            </div><br/><br/><br/>
+            
+            <!-- div 11 -->
+            <h1 class="slds-text-align_center" style="font-size:40px" >
+                <b style="color: #032d60;">Our customers tell the best stories.</b>  
+            </h1> <br/><br/>
+            <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-center">
+                
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_in/www/images/home/hp-img-cust-idfc.jpg"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium"> Shwetal Kathori  </h1>
+                    <h2 class="slds-text-align_center"> Vice President, Digital Marketing <br/>IDFC Asset Management Company Limited </h2>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_in/www/images/home/hp-img-cust-ngasce.jpg"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium">Rajiv Shah  </h1>
+                    <h2 class="slds-text-align_center"> Chief Executive Officer,<br/>NGA-SCE </h2>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_in/www/images/home/hp-img-cust-ceat.jpg"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium"> Ritesh Arora  </h1>
+                    <h2 class="slds-text-align_center"> Chief Digital Officer, <br/>CEAT Ltd. </h2>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_in/www/images/home/hp-img-cust-gep.jpg"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium">Sandeep Nayar </h1>
+                    <h2 class="slds-text-align_center"> Director, Customer Support <br/>Operations, GEP </h2>
+                </div>
+            </div><br/><br/><br/>
+            
+            <!-- div 12 -->
+            <h1 class="slds-text-align_center" style="font-size:40px;color: #032d60;" > <b>Add more apps and the benefits multiply.</b></h1> 
+            <h3 class="slds-text-align_center slds-text-color_weak slds-text-heading_small"> When customers use more than one Customer 360 app: </h3><br/><br/>
+            <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-center">
+                
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/72-2.jpg"/>
+                    <h2 class="slds-text-align_center slds-text-color_weak slds-text-heading_medium"> of customers with more than one<br/> app report improved time to ROI </h2>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/95-2.jpg"/>
+                    <h2 class="slds-text-align_center slds-text-color_weak slds-text-heading_medium"> with 2+ apps report improved<br/> efficiency and productivity. </h2>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/96-2.jpg"/>
+                    <h2 class="slds-text-align_center slds-text-color_weak slds-text-heading_medium"> say they have met or exceeded<br/> ROI expectations. </h2>
+                </div>
+            </div><br/><br/><br/>
+            <!-- div 13 -->
+            <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-center">
+                
+                <div class="slds-col" >
+                    <h1 class="slds-text-align_center slds-text-heading_medium" style="font-size:40px;color: #032d60;"> <b>Explore the complete <br/>Customer 360.</b> </h1>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col">
+                    <h2 class="slds-text-align_center slds-text-color_weak slds-text-heading_medium slds-m-top_large"> Find the right mix of solutions for any<br/> team in any industry. We’ll help your 
+                        teams come together, serve<br/> customers better, and grow your business.</h2>
+                    <span class="slds-m-left_xx-large "></span>
+                    <button class="slds-button slds-button_brand slds-m-left_xx-large slds-m-top_large">WATCH DEMOS</button>
+                </div>
+                
+            </div><br/><br/><br/>
+            
+            <!-- div 14 -->
+            <div class="slds-grid slds-grid_align-center">
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/sales-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> SALES  </h1>          
+                </div>
+                <div class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/service-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> SERVICE  </h1> 
+                </div>
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/marketing-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> MARKETING  </h1> 
+                </div>
+                <div  class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/commerce-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> COMMERCE  </h1> 
+                </div>
+                
+                
+                <div class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/analytics-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> ANALYTICS  </h1> 
+                </div>
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/integration-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> INTEGRATION  </h1> 
+                </div>
+            </div><BR/><BR/><BR/>
+            
+            <!-- div 15 -->
+            <div class="slds-grid slds-grid_align-center">
+                <div class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/slack.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> SLACKS  </h1> 
+                </div>
+                <div class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/platform-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> PLATFORM  </h1> 
+                </div>
+                <div class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/industries-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> INDUSTRIES  </h1> 
+                </div>
+                <div  class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/learning-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> LEARNING  </h1> 
+                </div>
+                <div class="slds-col">
+                    <img src="      https://www.salesforce.com/content/dam/web/en_us/www/images/products/employees-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> EMPLOYEES  </h1> 
+                </div>
+                <div class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/partners-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> PARTNERS  </h1> 
+                </div>
+            </div>
+            <BR/><BR/><BR/>
+            
+            <!-- div 16 -->
+            <div class="slds-grid slds-grid_align-center">
+                <div class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/success-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> SUCCESS  </h1> 
+                </div>
+                <div class="slds-col">
+                    <img src="  https://www.salesforce.com/content/dam/web/en_us/www/images/products/einstein-ai-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> EINSTEIN-AI  </h1> 
+                </div>
+                <div class="slds-col">
+                    <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/truth-circle.png"/>
+                    <h1 class="slds-text-align_center slds-text-heading_medium slds-text-title"> TRUTH  </h1> 
+                </div>
+            </div>
+            <!-- div 17 -->
+            
+            <div class="slds-grid slds-grid_vertical slds-m-top_xx-large  slds-text-align_center" style="position: relative; text-align: center;">
+                <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/products/footer-2.jpg"/>
+                <div class="slds-col slds-text-align_center" style=" position: absolute;  top: 30%; left: 50%; transform: translate(-50%, -50%);">
+                    <p style="font-size:40px;color: #032d60;"><b>Embrace all your data in a big group hug.</b></p>
+                    <span class="slds-text-color_weak slds-text-heading_medium ">  The more you know, the better you grow. Customer 360 gives everyone in your <br/>company the ability to access crucial data and make smarter, faster decisions.   </span><br/><br/>
+                    <p>Integrate all your data, inside and outside your CRM, with <a href="/in/products/integration/overview/?d=cta-body-promo-28">MuleSoft</a>. Automate tasks and get suggested next <br/> actions with <a href="/in/products/einstein/overview/?d=cta-body-promo-29">Einstein AI</a>. Get powerful, real-time analytics and data visualisations with <a href="/in/products/analytics/overview/?d=cta-body-promo-30">Tableau</a>.</p>
+                </div>   
+            </div>
+            
+            <!-- div 18 -->
+            <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-center">
+                
+                <div class="slds-col">
+                    <img class="slds-m-left_large" src="  https://www.salesforce.com/content/dam/web/en_us/www/images/nav/salesforce-cloud-logo-sm.png"/><br/><br/><br/>
+                    <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-center">
+                        <span ><a><i class="fa fa-facebook" style="font-size:26px"></i></a></span>
+                        <span class="slds-m-left_large"><a><i class="fa fa-twitter" style="font-size:26px"></i></a></span>
+                        <span class="slds-m-left_large"><a><i class="fa fa-instagram" style="font-size:26px"></i></a></span>
+                        <span class="slds-m-left_large"><a><i class="fa fa-linkedin-square" style="font-size:26px"></i></a></span>
+                        <span class="slds-m-left_large"><a><i class="fa fa-youtube" style="font-size:26px"></i></a></span>
+                        
+                    </div><br/>
+                    <h1 class="slds-m-left_large" style="font-size:20px;"> CALL US AT 1800-420-7332 </h1>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    <ul>
+                        <li class="slds-text-heading_medium">New to Salesforce?</li>
+                        <li>Why Salesforce</li>
+                        <li>What is CRM</li>
+                        <li>Explore all products</li>
+                        <li>What is cloud computing</li>
+                        <li>Customer success</li>
+                        <li>Product pricing</li>
+                    </ul>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col slds-m-left_xx-large slds-m-top_xx-large"> 
+                    <ul class="slds-m-top_medium">
+                        <li class="slds-text-heading_medium">About Salesforce</li>
+                        <li>Our Stories</li>
+                        <li>Careers</li>
+                        <li>Press</li>
+                        <li>Blog</li>
+                        <li>Security and Performance </li>
+                        <li>Salesforce.org</li>
+                        <li>Best CRM Software</li>
+                        <li>Sustainability </li>
+                        <li>Legal</li>
+                        <li>Give us your Feedback</li>
+                    </ul>
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    
+                </div>
+                <div class="slds-col slds-m-left_xx-large">
+                    <ul>
+                        <li class="slds-text-heading_medium">Links</li>
+                        <li>New Release Features</li>
+                        <li>Salesforce Mobile App</li>
+                        <li>Business App Store</li>
+                        <li>Dreamforce </li>
+                        <li>CRM software</li>
+                        <li>Salesforce Live</li>
+                        <li>Salesforce for startups</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- div 19 -->
+            <div style="background:#032e61; width:100%; ">
+                <div class="slds-grid slds-grid_vertical-align-center">
+                    <div class="slds-col slds-text-align_right">
+                        <button class="slds-button slds-button_brand ">WORLD WIDE</button>
+                    </div>
+                    <div class="slds-col slds-m-left_xx-large slds-m-top_x-large">
+                        <p><span style="color:#fff;">© Copyright&nbsp;2021 Salesforce.com, inc.&nbsp;</span><a href="https://www.salesforce.com/company/legal/intellectual.jsp">All rights reserved</a>.
+                            <span style="color:#fff;">Various trademarks held by their respective owners.</span></p>
+                        <ul class="slds-list_horizontal slds-has-inline-block-links_space">
+                            
+                            <li>
+                                <a href="#" class="slds-text-heading_small">Legal</a>
+                            </li>
+                            <li>
+                                <a href="#" class="slds-text-heading_small">Term of service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="slds-text-heading_small">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="slds-text-heading_small">Responsible Disclouser</a>
+                            </li>
+                            <li>
+                                <a href="#" class="slds-text-heading_small">Trust</a>
+                            </li>
+                            <li>
+                                <a href="#" class="slds-text-heading_small">Contact</a>
+                            </li>    
+                            <li>
+                                <a href="#" class="slds-text-heading_small">Cookies Preferences</a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </apex:form>
+</apex:component>

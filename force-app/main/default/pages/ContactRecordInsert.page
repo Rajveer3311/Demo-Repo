@@ -1,0 +1,42 @@
+<apex:page controller="ContactRecorrdInsertClass" showHeader="false" docType="html-5.0" lightningStylesheets="true">
+    <style>
+        .myFormStyle {
+            background-color: Wheat ;
+            border : 2px solid red;
+            
+       
+        }
+        body .bPageBlock.apexDefaultPageBlock, body{
+        
+        }
+        *, *:before, *:after {
+        	background: wheat;
+        }
+    </style>
+    <apex:form styleClass="myFormStyle">
+        <apex:pageBlock id="refresh" >
+            
+            <apex:pageBlockSection title="Contact Detail" columns="2">
+                
+                    
+                
+                 <apex:inputField value="{!c.firstName} " style="background-color: Wheat ;" />
+                <apex:inputField Value="{!c.lastName}"/>
+                <apex:inputField value="{!c.accountId}"/>
+                <apex:inputField Value="{!c.phone}" required="true"/>
+                <apex:inputField Value="{!c.email}" required="true"/>
+                <apex:inputField Value="{!c.Birthdate}"/>
+                <apex:inputField Value="{!c.mailingCountry}"/>
+                <apex:inputField Value="{!c.mailingState}"/>
+                <apex:inputField Value="{!c.mailingCity}"/>
+                <apex:inputField Value="{!c.mailingPostalCode}"/>
+                    
+                    
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!saveContact}" />
+            </apex:pageBlockButtons>
+       </apex:pageBlock> 
+            
+    </apex:form>
+</apex:page>

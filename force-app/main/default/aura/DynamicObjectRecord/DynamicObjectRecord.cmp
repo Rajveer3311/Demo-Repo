@@ -1,0 +1,24 @@
+<aura:component controller="DynamicObjectAuraController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="showOrHide" type="Boolean" default="false"/>
+    <aura:attribute name="dynamicObject" type="String"/>
+    <aura:attribute name="ObjectApiName" type="String"/>
+    <aura:attribute name="listValueName" type="String"/>
+    <aura:attribute name="dynamicObjectListViewData" type="List"/>
+    <div class="slds-p-around_medium">
+        
+        <lightning:input label="Enter Object" aura:id="dynamicObject" value="{!v.dynamicObject}"/> 
+        <lightning:combobox name="progress" label="Status" value="inProgress" placeholder="Select Progress" options="{!v.dynamicObjectListViewData}" onchange="{! c.handleChange }"/>
+        <lightning:button variant="brand" label="Search" title="Brand action" onclick="{! c.sendObject }" />
+        
+        <div>
+            <aura:if isTrue="{!v.showOrHide}">
+                
+                <lightning:listView aura:id="listView"
+                                    objectApiName="{!v.ObjectApiName}"
+                                    listName ="{!v.listValueName}" />
+                
+            </aura:if>  
+        </div>
+        
+    </div>
+</aura:component>

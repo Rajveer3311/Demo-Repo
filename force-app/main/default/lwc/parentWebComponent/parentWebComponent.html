@@ -1,0 +1,7 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent To Call Child Method" icon-name="standard:account">
+        <lightning-button variant="brand" label="CLICK" title="titleName" class="slds-align_absolute-center" onclick={callChildMethod}></lightning-button>
+    </lightning-card>
+    <!-- Child Component to display the name of person-->
+    <c-child-web-component></c-child-web-component>
+</template>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="ApiProperty" icon-name="standard:product_consumed">
+    <c-child-Lwc onsampledemo = {handlechange}></c-child-Lwc>
+    <div class="container">
+        <lightning-layout vertical-align="center">
+            <lightning-layout-item> {percentage}% </lightning-layout-item>
+            <lightning-layout-item flexibility="grow">
+                <div class="bar" style={style}></div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+    <c-view-source source="lwc/apiProperty" slot="footer">
+            Parent-to-child communication. Pass data to a child component using
+            its public (@api) properties.
+    </c-view-source>
+    </lightning-card>
+</template>

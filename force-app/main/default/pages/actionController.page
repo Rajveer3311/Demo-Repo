@@ -1,0 +1,50 @@
+<!--<apex:page lightningStylesheets="true" controller="ActionFunctionTutorilasController" >
+   
+    <apex:form >
+        <apex:actionFunction name="sayHello" action="{!sayHellofunction}"/>
+        <apex:actionFunction action="{!methodOne}" name="methodOneInJavascript" reRender="showstate">
+            <apex:param name="firstParam" assignTo="{!myName}" value="" />
+            <apex:param name="SecondParam" assignTo="{!testStr}" value="" />
+        </apex:actionFunction>
+        <apex:pageBlock id="showstate"  >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" onclick="methodOneInJavascript('Udit', 'Testing Second PARAM commandButton'); return false;" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:outputPanel onclick="methodOneInJavascript('Udit', 'Testing Second PARAM')" styleClass="btn">
+                    <apex:facet name="stop">{!myName}</apex:facet>
+                    My Name : {!myName}{!testStr}
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page> -->
+<apex:page lightningStylesheets="true" controller="ActionFunctionTutorilasController" docType="html-5.0">
+    <apex:form >
+          <apex:actionFunction action="{!totalSums}" name="methodOneInJavascript" reRender="showstate">
+            <apex:param name="firstNumber" assignTo="{!firstNo}" value="" />
+            <apex:param name="SecondNumber" assignTo="{!secondNo}" value="" />
+        </apex:actionFunction>
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                      First Number: <apex:input value="{!firstNo}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                   Second Number:<apex:input value="{!secondNo}"/> 
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+           <apex:pageBlockSection id="showstate">
+            	<apex:outputText >Total Sum: {!totalSum}</apex:outputText>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                
+                <apex:commandButton value="Save" onclick="methodOneInJavascript({!firstNo}, {!secondNo});return false;" />
+            </apex:pageBlockButtons>
+           
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

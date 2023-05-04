@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+	<c:searchContact auraPassValue="this is a aura pass value"></c:searchContact>
+</aura:component>

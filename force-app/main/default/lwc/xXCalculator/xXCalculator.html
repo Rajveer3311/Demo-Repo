@@ -1,0 +1,46 @@
+<template>
+    <form>
+        <article class="slds-card">
+            <div class="slds-card__body slds-card__body_inner">
+                <div class="container">
+                    <h2 class="slds-text-heading_medium slds-m-bottom_medium slds-align_absolute-center">
+                        A Simple LWC Editor
+                    </h2>
+
+                    <div id="blank">
+                        <lightning-input  label="First Number :" onchange={firstNum} required></lightning-input>
+                        <lightning-input  label="Second Number :" onchange={secondNum} required></lightning-input>
+                    </div>
+                    <span id="error"></span>
+                    <template if:true={show}>
+                        <div class="slds-m-top_small slds-m-bottom_medium">
+                            <lightning-button variant="brand" label="ADD" title="Primary action" value="+"  onclick={allCalculation} class="slds-m-left_x-small"></lightning-button>
+                            <lightning-button variant="brand" label="SUB" title="Primary action" value="-" onclick={allCalculation} class="slds-m-left_x-small"></lightning-button>
+                            <lightning-button variant="brand" label="MUL" title="Primary action" value="*" onclick={allCalculation} class="slds-m-left_x-small"></lightning-button>
+                            <lightning-button variant="brand" label="DIV" title="Primary action" value="/" onclick={allCalculation} class="slds-m-left_x-small"></lightning-button>
+                        </div>  
+                    </template>
+                    <template if:false={show}>
+                        <div class="slds-m-top_small slds-m-bottom_medium">
+                            <lightning-button variant="destructive" label="CLEAR" title="Primary action" value="+"  onclick={clearBtn} class="slds-m-left_x-small"></lightning-button>
+                        </div>
+                    </template>
+                    <div if:true={isLoading}>
+                        <div class="demo-only" style="height:6rem;position:relative">
+                            <div class="slds-spinner_container">
+                                <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                                    <span class="slds-assistive-text">Loading</span>
+                                    <div class="slds-spinner__dot-a"></div>
+                                    <div class="slds-spinner__dot-b"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <template if:true={showResult}>  
+                        <h1>Results is = {result}</h1>
+                    </template>   
+                </div>
+            </div>
+        </article>
+    </form>
+</template>

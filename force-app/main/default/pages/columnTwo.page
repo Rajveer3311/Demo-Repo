@@ -1,0 +1,13 @@
+<apex:page standardController="Account">
+    <apex:form >
+    <apex:pageBlock title="two Column">
+        <apex:pageBlockSection columns="1">
+            <apex:outputField Value="{!Account.Name}"/>
+            <apex:outputField Value="{!Account.Type}"/>
+            <apex:outputField Value="{!Account.Phone}"/>
+            <apex:outputField Value="{!Account.Fax}"/>
+            <apex:outputField Value="{!Account.Industry}"/>
+        </apex:pageBlockSection>   
+    </apex:pageBlock>/>
+    </apex:form>
+</apex:page>

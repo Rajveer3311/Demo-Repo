@@ -1,0 +1,21 @@
+<apex:page >
+    <apex:includeLightning />
+
+    <div id="lightningvf"/>
+        
+   
+   
+    <script>
+    // use aura app name first use lwc in aura and then we can use in lwc
+        $Lightning.use("c:lwcTestApp", function() {
+          $Lightning.createComponent("c:searchContact",
+              { vfMessage:"this is a vf message"},
+              "lightningvf",
+              function(cmp) {
+                console.log("button was created");
+                // do some stuff
+              }
+          );
+        });
+    </script>
+</apex:page>

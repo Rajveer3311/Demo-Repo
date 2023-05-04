@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="New Leave">
+        
+        
+        <button class="slds-button slds-button_outline-brand slds-align_absolute-center"  label={clickedButtonLabel} title="Show" onclick={handleClick}>Apply For Leave</button>
+        <template if:true={boolVisible}>  
+  
+            <div>Testing Hide and Show</div>  
+              
+        </template>  
+    </lightning-card>
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card>
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+                <p>{name}</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <p>{age}</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <p>{college}</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <p>{userId}</p>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item>
+            <lightning-button variant="base" label="Click Here" title="titleName" onclick={handleClick}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,481 @@
+<apex:page standardStylesheets="true" renderAs="pdf" standardController="Account">
+    <apex:slds />
+    <div class="">
+        <div style="margin: auto; width: 50%;background-color:#FA600C;height:8px;"></div>
+        <div style="margin: auto; width: 45%;"><br/><br/>
+            <h1 class="slds-text-heading_large">Detailed budget</h1><br/>
+            <p>
+                After filling out the 'Budget estimator' tab, plan and track a more detailed
+                breakdown by filling out the 'Estimated' and 'Actual' amounts here.<br/><br/>
+                The 'Planned budget' , 'Estimated total', and 'Actual total' will
+                automatically calculate for you.
+            </p><br/><br/>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Ceremony</b></span><br/>
+                    <span>Decorations/accessories</span><br/>
+                    <span>Location fee</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$150</span><br/>
+                    <span style="margin-left:30px;">$250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:10px;">$300</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:75px;">$500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:75px;">$400</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span class="slds-m-left_xx-large">$300</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Reception</b></span><br/>
+                    <span>Decorations</span><br/>
+                    <span>Parking/transportation</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$500</span><br/>
+                    <span style="margin-left:30px;">$250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:75px;">$750</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:75px;">$750</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Printed materials</b></span><br/>
+                    <span>Save-the-dates</span><br/>
+                    <span>Invitations</span><br/>
+                    <span>Wedding programs</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$100</span><br/>
+                    <span style="margin-left:30px;">$625</span><br/>
+                    <span style="margin-left:30px;">$100</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:75px;">$750</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:75px;">$825</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Gifts/favors</b></span><br/>
+                    <span>Attendant gifts</span><br/>
+                    <span>Favors</span><br/>
+                    <span>Parent gifts</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$250</span><br/>
+                    <span style="margin-left:30px;">$375</span><br/>
+                    <span style="margin-left:30px;">$125</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:75px;">$750</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:75px;">$750</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div>
+            
+            <br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Venue</b></span><br/>
+                    <span>Location fee</span><br/>
+                    <span>Addt'l costs</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$2000</span><br/>
+                    <span style="margin-left:30px;">$250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:65px;">$2,250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:65px;">$2,250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Attire</b></span><br/>
+                    <span>Wedding attire</span><br/>
+                    <span>Alterations</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:20px;">$2000</span><br/>
+                    <span style="margin-left:30px;">$250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:65px;">$2,250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:65px;">$2,250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Hair/makeup</b></span><br/>
+                    <span>Hair/makeup</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:75px;">$250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:75px;">$250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Rings</b></span><br/>
+                    <span>Wedding rings</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:75px;">$500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:75px;">$500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Cake</b></span><br/>
+                    <span>Cake+cutting fee</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:18px;">$0</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:75px;">$500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:68px;">$0</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Photography</b></span><br/>
+                    <span>Photographer</span><br/>
+                    <span>Videographer</span><br/>
+                    <span>Extra prints</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:20px;">$1,500</span><br/>
+                    <span style="margin-left:20px;">$1,250</span><br/>
+                    <span style="margin-left:30px;">$250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:68px;">$3,000</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:68px;">$3,000</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Caterer drinks</b></span><br/>
+                    <span>Food + servers</span><br/>
+                    <span>Drinks + bartenders</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:10px;">$7,000</span><br/>
+                    <span style="margin-left:20px;">$1500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:68px;">$8500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:68px;">$8500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Entertainment</b></span><br/>
+                    <span>Ceremony</span><br/>
+                    <span>Reception</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$250</span><br/>
+                    <span style="margin-left:40px;">$1500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:75px;">$500</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:75px;">$400</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Misc</b></span><br/>
+                    <span>Coordinator</span><br/>
+                    <span>Misc.items</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:30px;">$500</span><br/>
+                    <span style="margin-left:30px;">$750</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:20px;">$0</span><br/>
+                    <span style="margin-left:20px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:65px;">$1250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:65px;">$1250</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div><br/><br/>
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class=""><b>Flowers</b></span><br/>
+                    <span>Bouquets</span><br/>
+                    <span>Decorations/centerpieces</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Estimated</b></span><br/>
+                    <span style="margin-left:10px;">$1,000</span><br/>
+                    <span style="margin-left:10px;">$1,000</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-top_large"><b>Actual</b></span><br/>
+                    <span style="margin-left:60px;">$0</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div>
+            <div style="margin: auto; width:auto;background-color:black;height:1px;"></div>
+            <div class="slds-grid slds-m-left_large">
+                <div class="slds-col">
+                    <span class="slds-m-left_small">Planned budget</span><br/>
+                    <span style="margin-left:65px;">$2,000</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_medium">Estimated total</span><br/>
+                    <span style="margin-left:65px;">$2,000</span>
+                </div>
+                <div class="slds-col">
+                    <span class="slds-m-left_x-small">Actual total</span><br/>
+                    <span style="margin-left:60px;">$0</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>  
+    
+</apex:page>

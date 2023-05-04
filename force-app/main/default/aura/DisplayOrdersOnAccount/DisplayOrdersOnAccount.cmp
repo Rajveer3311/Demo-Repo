@@ -1,0 +1,17 @@
+<aura:component implements="force:hasRecordId,lightning:availableForFlowScreens" access="global">
+    
+    <!-- handlers-->
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="allOrderListValue" type="Order[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:card title="Lightning Aura Component">
+        <div class="slds-p-around_small">
+             Current Record ID in Lightning Aura Component:
+            <aura:iteration items="{!v.allOrderListValue}" var="orderItem">
+                <p>{!orderItem.Name}</p> 
+                <p>{!orderItem.OrderNumber}</p>
+            </aura:iteration>
+        </div>
+    </lightning:card>
+</aura:component>

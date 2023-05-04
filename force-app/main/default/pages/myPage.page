@@ -1,0 +1,116 @@
+<apex:page lightningStylesheets="true" controller="NationalControllerClass" docType="html-5.0" id="pg">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <apex:slds />
+
+    
+    <apex:form id="frm">
+       
+        Start Date: <input type="text" id="startDate" placeholder="Start Date" onchange="myFunction() "/>
+        End Date: <input type="text" id="endDate"  placeholder="End Date" onchange="myFunction()"/>
+         
+        <apex:actionFunction action="{!getDateValue}" name="datePassToActionFunction"  rerender="frm" oncomplete="initializeDatePicker();" status="rep_detail_sts">
+            <apex:param name="firstParam" assignTo="{!dat}" value="" />
+            <apex:param name="secondParam" assignTo="{!dat2}" value="" />
+        </apex:actionFunction>
+            <apex:actionStatus id="rep_detail_sts" stopText="">
+            <apex:facet name="start">
+                <div class="demo-only" style="height:6rem;position:relative">
+                    <div class="slds-spinner_container">
+                        <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                            <span class="slds-assistive-text">Loading</span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                 </div>
+                </apex:facet>
+        </apex:actionStatus>
+        <apex:outputPanel id="thePanel" layout="block" rendered="{!showData}" >
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped" aria-label="Example table of Opportunities with striped rows">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Opportunity Name">Owner</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Account Name">Total Leads</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Close Date">Total Opps.</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="">Conv Rate</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Confidence">Max Created Date (Opp)</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Total Val (Opp)">Total Val (Opp)</div>
+                    </th>
+                    
+                </tr>
+            </thead>
+            
+            <tbody>
+                
+                <apex:repeat value="{!ownerDataList}" var="ownerRecord">
+                    
+                    <tr class="slds-hint-parent">
+                        <th data-label="Opportunity Name" scope="row">
+                            <div class="slds-truncate" title="Cloudhub">
+                                {!ownerRecord.ownerName}
+                            </div>
+                        </th>
+                        <td data-label="Close Date">
+                            {!ownerRecord.leadCount}
+                        </td>
+                        <td data-label="Prospecting">
+                            {!ownerRecord.oppCount}
+                        </td>
+                        <td data-label="Confidence">
+                            {!ownerRecord.conversionRate}
+                        </td>
+                        <td data-label="Amount">
+                            {!ownerRecord.maxCreatedDate}
+                        </td>
+                        <td data-label="Amount">
+                            {!ownerRecord.ownerName}
+                        </td> 
+                    </tr>
+                </apex:repeat>
+                
+                
+            </tbody>
+        </table>
+        </apex:outputPanel> 
+                   
+            
+    </apex:form>
+    <script >
+    function initializeDatePicker(){
+        $("#startDate").datepicker({
+            dateFormat: "yy-mm-dd"
+        });
+        $("#endDate").datepicker({
+            dateFormat: "yy-mm-dd"
+        });
+    }
+    function myFunction(){
+        
+        var sDate=document.getElementById("startDate").value;
+        var eDate=document.getElementById("endDate").value;
+        //console.log('hii'+d+'hii');
+        if((sDate!='' && eDate!='')){
+            datePassToActionFunction(sDate,eDate);
+        }
+    }
+    $(function(){
+        initializeDatePicker();
+    });
+    
+    
+    </script>
+</apex:page>

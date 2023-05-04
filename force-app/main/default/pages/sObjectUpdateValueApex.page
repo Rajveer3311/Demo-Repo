@@ -1,0 +1,87 @@
+<apex:page controller="sObjectUpdateValue" tabStyle="Account">
+<apex:form >
+    <apex:pageBlock title="Account Details">
+        <apex:pageblockButtons >
+            <apex:commandButton value="Save Account" action="{!updateAccountDetails}"/>
+        </apex:pageblockButtons>
+        
+        <apex:pageBlockSection title="Personal Details">
+            <apex:pageBlockSectionItem >
+                Name: <apex:outputField label="Name" value="{!accObj.Name}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                Phone:<apex:outputField label="Phone" value="{!accObj.Phone}"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection collapsible="false">
+            <apex:pageBlockSectionItem >
+                SLAExpirationDate:<apex:outputField label="SLAExpirationDate" value="{!accObj.SLAExpirationDate__c}"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        
+        <!--EDIT DETAILS -->
+        <apex:pageBlockSection title="Personal Details">
+            <apex:pageBlockSectionItem >
+                Name:<apex:inputField label="Name" value="{!accObj.Name}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                Phone:<apex:inputField value="{!accObj.Phone}"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection collapsible="false">
+            <apex:pageBlockSectionItem >
+                SLAExpirationDate:<apex:inputField label="Name" value="{!accObj.SLAExpirationDate__c}"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+
+    
+    
+    <!-- DATATABLE -->
+ <!--   <apex:dataTable var="accountObj" value="{!accountList}" >
+        
+        <apex:column value="{!accountObj.Name}" headerValue="Name"/>
+        <apex:column value="{!accountObj.Phone}" headerValue="Phone"/>
+        <apex:column value="{!accountObj.BillingCity}" headerValue="BillingCity"/>
+            
+    </apex:dataTable>-->
+        
+        <apex:pageBlockTable var="accountObj" value="{!accountList}" >
+            <apex:column headerValue="Name">
+                <apex:commandLink value="{!accountObj.Name}" action="/{!accountObj.id}"/>
+            </apex:column>
+            <apex:column value="{!accountObj.Phone}" headerValue="Phone"/>
+            <apex:column value="{!accountObj.BillingCity}" headerValue="BillingCity"/>
+        </apex:pageBlockTable>
+        
+        
+          <apex:repeat var="accountObj" value="{!accountList}">
+             
+            <apex:pageBlockSection title="Account Details">
+            <apex:pageBlockSectionItem >
+                Name:<apex:commandLink value="{!accountObj.Name}" action="/{!accountObj.id}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                Phone:<apex:outputField label="Phone" value="{!accountObj.Phone}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+               SLAExpirationDate:<apex:outputField label="SLAExpirationDate" value="{!accountObj.SLAExpirationDate__c}"/> 
+            </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+              
+              <apex:repeat var="contObj" value="{!accountObj.Contacts}"> 
+              <apex:pageBlockSection title="Contact Details">
+               <apex:pageBlockSectionItem >
+                Name:<apex:commandLink value="{!contObj.Name}" action="/{!contObj.id}"/>  
+               </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                  Email:<apex:outputField label="Email" value="{!contObj.Email}"/>
+                </apex:pageBlockSectionItem>  
+                <apex:pageBlockSectionItem >
+                  Phone:<apex:outputField label="Phone" value="{!contObj.Phone}"/>
+                </apex:pageBlockSectionItem> 
+              </apex:pageBlockSection>
+          </apex:repeat>    
+          </apex:repeat> 
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

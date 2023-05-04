@@ -1,0 +1,41 @@
+<!--// when a  account is inserted at most 1 contact insert -->
+
+<apex:page tabStyle="Account" controller="AccountCreateController" lightningStylesheets="true">
+    <apex:form >
+        <apex:pageBlock title="Insert Account And Contact ">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection collapsible="false" columns="2" title="Create Account">
+                <apex:inputField value="{!a.Name}"/>
+                <apex:inputField value="{!a.Rating}"/>
+                <apex:inputField value="{!a.SLAExpirationDate__c}"/>
+                <apex:inputField value="{!a.ParentId}"/>
+                <apex:inputField value="{!a.Phone}" />
+                <apex:inputField value="{!a.Website}" />
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+        <apex:pageBlock title="Contact" tabStyle="Opportunity" >
+           <apex:pageBlockSection collapsible="false" columns="1" title="Create Contact 1" > 
+            
+               <apex:inputField value="{!b.firstName}" />
+                <apex:inputField value="{!b.lastName}" required="false" />
+                <apex:inputField value="{!b.email}"/>
+                
+         </apex:pageBlockSection> 
+           <apex:pageBlockSection collapsible="false" columns="2" title="Create Contact 2">
+                <apex:inputField value="{!c.firstName}" />
+                <apex:inputField value="{!c.lastName}" required="false"/>
+                <apex:inputField value="{!c.email}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection collapsible="false" columns="2" title="Create Contact 2">
+                <apex:inputField value="{!d.firstName}" />
+                <apex:inputField value="{!d.lastName}" required="false"/>
+                <apex:inputField value="{!d.email}"/>
+            </apex:pageBlockSection> 
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!saveAccount}" value="Save"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock> 
+    </apex:form>
+</apex:page>

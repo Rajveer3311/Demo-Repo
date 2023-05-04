@@ -1,0 +1,42 @@
+<apex:component >
+    <apex:slds ></apex:slds>
+    
+    <div class="slds-grid ">
+        <div class="slds-col  slds-text-align_right slds-m-top_medium">
+            	<img src="	https://www.salesforce.com/content/dam/sfdc-docs/www/logos/logo-salesforce.svg"/>
+        </div>
+        
+        <div class="slds-col slds-align-bottom">
+            <ul class="slds-list_horizontal slds-has-inline-block-links_space">
+                
+                <li>
+                    <a href="#" class="slds-text-heading_small">Products</a>
+                </li>
+                <li>
+                    <a href="#" class="slds-text-heading_small">Resources</a>
+                </li>
+                <li>
+                    <a href="#" class="slds-text-heading_small">Support</a>
+                </li>
+                <li>
+                    <a href="#" class="slds-text-heading_small">Company</a>
+                </li>
+                <li>
+                    <a href="#" class="slds-text-heading_small">Covid-19</a>
+                </li>               
+            </ul>
+        </div>
+        
+        <div class="slds-col slds-m-top_small">
+            <a class="icon-sfdc-icon-magnifying-glass" href="/in/search/" aria-label="search"><i class="fa fa-search" style="font-size:20px"></i></a>
+            <span class="slds-text-heading_small slds-m-left_medium">1800-420-7332</span>
+            <a  href="/in/search/" aria-label="search" class="slds-m-left_large slds-text-heading_small">Contact Us</a>
+            <a><i class="fa fa-globe slds-m-left_large" style="font-size:20px"></i></a>
+            <a href="https://login.salesforce.com/?locale=in" class="dropdown-toggle disabled slds-m-left_medium slds-text-heading_small" tabindex="-1" rel="nofollow">Login
+                <img class="img-responsive" alt="" src="//www.salesforce.com/content/dam/sfdc-docs/www/images/global-navigation/icon-login-astro.png" height="30px" width="30px"/>
+            </a>
+            
+        </div>
+    </div>
+    
+</apex:component>

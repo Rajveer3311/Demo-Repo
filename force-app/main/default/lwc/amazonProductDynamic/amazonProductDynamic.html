@@ -1,0 +1,61 @@
+<template>
+    <article class="slds-card">
+    88889
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <div class="slds-size_1-of-6" >
+            <template if:true={Images}>
+                <template for:each={Images} for:item="dataImg">
+            
+                <div class="cursor" key={dataImg.Id}>
+                    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small ">
+                        <img src={dataImg.Image_Url__c}
+                        data-id="img1"  onmouseover={setImage} style="width:50px;height:50px;">
+                    </div>
+                </div>
+            
+        </template>
+    </template>
+</div>
+    
+        <div class="slds-size_1-of-3">
+            <div class=" slds-text-align_center slds-m-around_x-small">
+              <img src={imageData}
+              style="height:550px">
+              
+            </div>
+        </div>
+        <div class="slds-size_1-of-3">
+            <div class=" slds-m-around_x-small">
+                <h1 class="slds-text-heading_large">New Apple iPhone 12 Pro (128GB) - Gold</h1>
+                <a class="slds-text-heading_small">Visit the Apple Store</a>
+                <hr>
+                <p>M.R.P :	<strike class="slds-text-heading_medium">₹1,19,900.00</strike> </p>
+                <span>Deal Price : <span class="slds-text-color_destructive slds-text-heading_small">₹1,11,900.00 </span></span>
+                <h3>You Save:	₹8,000.00 (7%)</h3>
+                <p>Inclusive of all taxes</p>
+                <span>
+                <a>FREE delivery:</a>
+                <span>Sunday, Aug 29</span>
+                <a>Details</a>
+                </span>
+                <p>EMI starts at ₹5,268. No Cost EMI available <span>EMI Options.</span></p>
+                <h2>In Stock</h2>
+                <p>Sold by <a>Appario Retail Private Ltd </a>and <a>Fulfilled by Amazon</a>.</p>
+                <hr>
+                <h2 class="slds-text-heading_large">About this item</h2>
+                <ul style="list-style-type:disc;">
+                    <li>6.1-inch (15.5 cm diagonal) Super Retina XDR display</li>
+                    <li>Ceramic Shield, tougher than any smartphone glass</li>
+                    <li>A14 Bionic chip, the fastest chip ever in a smartphone</li>
+                    <li>Pro camera system with 12MP Ultra Wide, Wide and Telephoto cameras; 4x optical zoom range; Night mode, Deep Fusion, Smart HDR 3, Apple ProRAW, 4K Dolby Vision HDR recording</li>
+                    <li>LiDAR Scanner for improved AR experiences, Night mode portraits</li>
+                    <li>12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording</li>
+                    <li>Industry-leading IP68 water resistance</li>
+                    <li>Supports MagSafe accessories for easy attach and faster wireless charging</li>
+                    <li>iOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </article>
+</template>

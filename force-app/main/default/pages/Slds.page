@@ -1,0 +1,22 @@
+<apex:page lightningStylesheets="true" applyHtmlTag="true">
+    <head>
+        <apex:slds />
+    </head>
+    <body class="slds-scope" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <span>gsdfwgfawb</span>
+            </div>
+            <div class="slds-col">
+                <span>bbvsadbjhfbwjabhj</span>
+            </div>
+            <div class="slds-col">
+                <span>bkdbhfbjhsdabkfbhhkwj</span>
+            </div>
+        </div>
+       
+        
+     
+        
+    </body>
+</apex:page>

@@ -1,0 +1,27 @@
+<template>
+    <p>Hii  thanks for coming here...</p>
+<template for:each={contacts} for:item="cont">
+<div class="slds-grid slds-gutters slds-card" key={cont.id}>
+  <div class="slds-col">
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-tile label="Lightning component team" type="media">
+                <lightning-icon slot="media" icon-name="standard:groups"></lightning-icon>
+                <p class="slds-truncate" title="7 Members">{cont.Name}</p>
+            </lightning-tile>
+        </div>
+    </div>
+  </div>
+</div>
+</template>
+    <!--    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={contacts}
+                show-row-number-column
+                hide-checkbox-column
+                columns={columns}>
+        </lightning-datatable>
+    </div>  -->
+
+</template>

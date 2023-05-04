@@ -1,0 +1,70 @@
+<template>
+        <lightning-card>
+            <h1 class="title">Contact Details</h1>
+            
+
+            <!-- print list data for loop  -->
+
+            <!-- <template if:true={contactList}>
+                <template for:each={contactList} for:item="contact">
+                    <p key={contact.Id}>
+                        {contact.FirstName}
+                    </p>
+                </template>
+            </template>
+
+            <template if:true={contactList}>
+                <template for:each={contactList} for:item="contact">
+                
+                    <p key={contact.Id}>
+                        {contact.lastName}
+                    </p>
+                </template>
+            </template> -->
+            <lightning-button label="New" slot="actions" onclick={showData}></lightning-button>
+            <table class="bordercss slds-table slds-table_cell-buffer slds-table_bordered" aria-label="Example default base table of Opportunities">
+                <thead>
+                    <tr>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Opportunity Name">First Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Account Name">Last Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Opportunity Name">Phone</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Account Name">Email</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="tableBody">
+                    <template for:each={con} for:item="contact">
+                       
+                    <tr class="slds-hint-parent" key={contact.Id}>
+                        <th data-label="Contact Name" scope="row">
+                          <div class="slds-truncate" title="Cloudhub">
+                            <a href="#" tabindex="-1">{contact.FirstName}</a>
+                          </div>
+                        </th>
+                        <td data-label="Last Name">
+                            <div class="slds-truncate" title="Phone">{contact.LastName}</div> 
+                        </td>
+                          <td data-label="Phone">
+                            <div class="slds-truncate" title="Phone">{contact.Phone}</div>
+                          </td>
+                          <td data-label="Email">
+                            <div class="slds-truncate" title="Email">{contact.Email}</div>
+                          </td>
+                    </tr>
+                
+                </template>
+                </tbody>
+            
+            </table>
+            <p class="slds-p-horizontal_small"></p>
+            <!-- <p slot="footer">Card Footer</p> -->
+        </lightning-card>
+        
+</template>

@@ -1,0 +1,32 @@
+<apex:page standardController="Account"> <!-- URL?id=RECORD_ID -->
+    <!-- applyHtmlTag="false" applyBodyTag="false" when we have to apply our own HTML and BODY tag-->
+    <h1>
+         Hello World
+    </h1>
+    <ul>
+        <li>
+            Name:<b>{!Account.Name}</b> <!-- "{! variable Name }" -->
+        </li>
+        <li>
+            Phone:<b>{!Account.Phone}</b> <!-- "{! variable Name }" -->
+        </li>
+    </ul>
+    <apex:form >
+    <ul>
+        <li>
+            <!--<apex:inputText label="Name" value="{!Account.Name}"/>-->  <br/>
+            Name:<apex:inputField label="Name" value="{!Account.Name}"/>
+        </li>
+        <li>
+            Phone:<apex:inputField label="Name" value="{!Account.Phone}"/>
+        </li>
+        <li>
+            Type:<apex:inputField label="Name" value="{!Account.Type}"/>
+        </li>
+    </ul>
+    <apex:commandButton value="Save Record" action="{!save}" />
+    
+    </apex:form>
+    <apex:relatedList list="Contacts"/>
+    <apex:relatedList list="Opportunities"/>
+</apex:page>

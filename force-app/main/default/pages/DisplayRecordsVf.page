@@ -1,0 +1,25 @@
+<apex:page controller="DisplayRecords" lightningStylesheets="true" docType="html-5.0">
+    <apex:form >
+        <apex:actionFunction action="{!methodTwo}" name="methodOneInJavascript"  reRender="pg">
+            <apex:param name="firstParam" assignTo="{!accId}" value="" />
+        </apex:actionFunction>
+        <apex:pageBlock >
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockTable value="{!accList}" var="acc" >
+                    <apex:column value="{!acc.Name}" />	
+                    <apex:column value="{!acc.Website}" />
+                    <apex:column >
+                        <apex:commandButton value="show" onclick="methodOneInJavascript('{!acc.Id}'); return false;" />
+                    </apex:column>
+                </apex:pageBlockTable> 
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockTable value="{!conList}" var="con" id="pg">
+                    <apex:column value="{!con.Name}" />
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>      
+            
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

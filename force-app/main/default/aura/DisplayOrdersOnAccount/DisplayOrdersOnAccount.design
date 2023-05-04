@@ -1,0 +1,3 @@
+<design:component label="Hello World">
+    <design:attribute name="allOrderListValue" label="allOrderListValue" />
+</design:component>

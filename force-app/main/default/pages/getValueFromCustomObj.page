@@ -1,0 +1,60 @@
+<apex:page controller="getValueFromCustomObj" showHeader="false">
+    <center>
+        <h1> Custom Controller </h1>
+    </center>
+    <ul>
+        <li>{!name}</li>
+        
+        <apex:repeat var="foodName" value="{!foodNames}">
+            <li>Food Name is <b>{!foodName}</b></li>
+            
+        </apex:repeat>
+    </ul>
+    <!-- LIST -->
+    <table border="1">
+        <apex:repeat var="foodName" value="{!foodNames}">
+            <tr>
+                <td>
+                    Food Name is
+                </td>
+                <td>
+                    {!foodName}
+                </td>
+            </tr>
+        </apex:repeat>
+    </table>
+    
+    <apex:dataTable var="foodName" value="{!foodNames}">
+        <apex:column headerValue="Description">
+            Food Name is
+        </apex:column>
+        <apex:column value="{!foodName}" headerValue="Item Name"/>
+    </apex:dataTable>
+    
+    <!-- MAP -->
+    <apex:repeat var="monthIndex" value="{!monthByIndex}">
+        {!monthIndex}
+        {!monthByIndex[monthIndex]}
+    </apex:repeat>
+    
+    <table border="1">
+        <apex:repeat var="monthIndex" value="{!monthByIndex}">
+            <tr>
+                <td>
+                    {!monthIndex}
+                </td>
+                <td>
+                    {!monthByIndex[monthIndex]}
+                </td>
+            </tr>
+        </apex:repeat>
+    </table>
+    
+    <apex:dataTable var="monthIndex" value="{!monthByIndex}">
+        <apex:column headerValue="Description">
+            {!monthIndex}
+        </apex:column>
+        <apex:column value="{!monthByIndex[monthIndex]}" headerValue="Item Name"/>
+    </apex:dataTable>
+    
+</apex:page>

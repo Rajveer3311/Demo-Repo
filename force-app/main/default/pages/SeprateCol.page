@@ -1,0 +1,30 @@
+<apex:page docType="html-5.0" lightningStylesheets="true">
+    <apex:form >
+        <apex:page >
+            <apex:pageBlock >
+                <apex:pageBlockSection >
+                    <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Column 1">
+                        <apex:outputPanel layout="block">
+                          nkjefn  <apex:input />
+                           njkdsnak <apex:input />
+                           
+                        </apex:outputPanel>
+                    </apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                
+         
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Column 1">
+                        <apex:outputPanel layout="block" >
+                            jhdshfbsjknfkj
+                            
+                        </apex:outputPanel>
+                    </apex:outputLabel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+                
+            </apex:pageBlock>
+        </apex:page>
+    </apex:form>
+</apex:page>

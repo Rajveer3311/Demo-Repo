@@ -1,0 +1,9 @@
+.bordercss {
+    border: 2px solid red !important;
+
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

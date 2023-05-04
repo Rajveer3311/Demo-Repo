@@ -1,0 +1,30 @@
+<aura:component controller="CreateRecordController" >
+    
+    <aura:attribute name="contactList" type="Contact[]"/>
+    <aura:attribute name="contactObj" type="Contact" default="{'sObjectType':'Contact','FirstName':'','LastName':''}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.showContacts}"/>
+    
+    <lightning:input  label="First Name:" value="{!v.contactObj.FirstName}"/>
+    <lightning:input  label="Last Name" value="{!v.contactObj.LastName}"/>
+    <lightning:button variant="brand" label="Save" title="Brand action" onclick="{! c.sendData }" />
+    <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+    <aura:iteration items="{!v.contactList}" var="contObj" indexVar="index">
+        
+            <tr>
+                <td data-label="First Name">
+                    <div>{!contObj.FirstName}</div> 
+                </td>
+                <td data-label="Last Name">
+                    <div>{!contObj.LastName}</div>
+                </td>
+            </tr>
+        
+    </aura:iteration>
+        </table>
+</aura:component>

@@ -1,0 +1,64 @@
+<apex:page controller="ContactInsertAndShowList" lightningStylesheets="true">
+    <apex:form style="border:3px solid red;">
+        
+        <apex:pageBlock >
+              
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:pageBlock id="pg2">
+                        <apex:pageBlockSection >
+                            <apex:inputField value="{!b.firstName}"/>
+                            <apex:inputField value="{!b.lastName}"/>
+                            <apex:inputField value="{!b.email}"/>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockButtons location="bottom">
+                            <apex:commandButton action="{!saveAccount}" value="Save" reRender="pg1,pg2" />
+                        </apex:pageBlockButtons>
+                    </apex:pageBlock>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:pageBlock id="pg1">
+                        <apex:pageBlockSection >
+                            <apex:dataTable value="{!conList}" var="c">
+                                <apex:column value="{!c.firstName}" headerValue="First Name"/>
+                                <apex:column value="{!c.LastName}" headerValue="Last Name"/>
+                                <apex:column value="{!c.email}" headerValue="Email"/>
+                            </apex:dataTable>
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:pageBlock >
+                        <apex:pageBlockSection >
+                            <apex:dataTable value="{!lastWeekList}" var="l" >
+                                <apex:column value="{!l.firstName}" headerValue="First Name"/>
+                                <apex:column value="{!l.LastName}" headerValue="Last Name"/>
+                                <apex:column value="{!l.email}" headerValue="Email"/>
+                            </apex:dataTable>
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:pageBlock >
+                        <apex:pageBlockSection >
+                            <apex:dataTable value="{!thisWeekList}" var="t" >
+                                <apex:column value="{!t.firstName}" headerValue="First Name"/>
+                                <apex:column value="{!t.LastName}" headerValue="Last Name"/>
+                                <apex:column value="{!t.email}" headerValue="Email"/>
+                            </apex:dataTable>
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        
+    </apex:form>
+</apex:page>

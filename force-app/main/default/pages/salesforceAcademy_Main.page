@@ -1,0 +1,5 @@
+<!-- It will show the salesforce official website copy.. -->
+<apex:page >
+    <c:salesforceAcademy_Navbar />
+    <c:salesforceAcademy_Home />
+</apex:page>

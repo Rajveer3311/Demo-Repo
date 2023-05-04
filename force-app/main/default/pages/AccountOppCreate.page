@@ -1,0 +1,43 @@
+<apex:page title="Create Account And under Opportunity" tabStyle="Account" controller="AccountOppCreateController">
+   <apex:form >
+       <apex:actionFunction immediate="true" name="toggleCreateOpportunityJS" action="{!toggleCreateOpportunity}" reRender="pgBlock">
+           <apex:param name="A" value="{!createOpportunity}" assignTo="{!createOpportunity}"/>
+       </apex:actionFunction>
+       <apex:pageMessages escape="false"></apex:pageMessages>
+     
+       <apex:pageBlock id="pgBlock" tabStyle="Account">
+           <div class="center"> <h1> Account Details </h1> </div>
+           <apex:pageBlockSection id="accSection" collapsible="false" columns="2" title="Create Account">
+               <apex:inputField value="{!acc.Name}" />
+               <apex:inputField value="{!acc.Rating}"/>
+               <apex:inputField value="{!acc.ParentId}"/>
+               <apex:inputField value="{!acc.Phone}" />
+               <apex:inputField value="{!acc.SLAExpirationDate__c}"/>  
+               <apex:inputField value="{!acc.Website}" />
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel >Create Opportunity</apex:outputLabel>
+                <apex:inputCheckbox value="{!createOpportunity}" onchange="toggleCreateOpportunityJS(this.checked); return false;"/>
+               </apex:pageBlockSectionItem>
+           </apex:pageBlockSection>
+         
+           <apex:pageBlockSection id="oppSection" rendered="{!createOpportunity}"  collapsible="false" columns="2" title="Opportunity Details">
+               <apex:inputField value="{!opp.Name}" />
+               <apex:inputField value="{!opp.StageName}" />
+               <apex:inputField value="{!opp.LeadSource}"/>
+               <apex:inputField value="{!opp.CloseDate}" />
+               <apex:inputField value="{!opp.Amount}"/>
+           </apex:pageBlockSection>
+         
+           <apex:pageBlockButtons location="bottom">
+               <apex:commandButton styleClass="btn" action="{!save}" value="Save"/>
+              
+           </apex:pageBlockButtons>
+         
+       </apex:pageBlock>
+       <script>
+        function myFun(checked){
+               alert('I am ' + checked);
+           }
+       </script>
+   </apex:form>
+</apex:page>

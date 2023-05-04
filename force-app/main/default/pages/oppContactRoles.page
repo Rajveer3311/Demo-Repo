@@ -1,0 +1,81 @@
+<apex:page standardController="opportunity" sidebar="true" showHeader="true" >
+    <apex:form >
+        
+        <apex:sectionHeader title="{!opportunity.name}" subtitle="New Opportunity"/>       
+        <apex:pageBlock title="Opportunity Information" tabStyle="Opportunity">  
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Opportunity owner</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.Owner.name}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Amount</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.amount}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Opportunity name</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.name}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Close Date</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.closedate}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Account name</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.accountid}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Stage</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.StageName}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Lead Source</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.leadsource}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Probability</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.probability}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Total Opportunity</apex:outputLabel>
+                    <apex:inputField value="{!opportunity.TotalOpportunityQuantity}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            
+            
+            
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

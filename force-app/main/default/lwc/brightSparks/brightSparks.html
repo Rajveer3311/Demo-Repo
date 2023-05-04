@@ -1,0 +1,19 @@
+<template>
+    
+    <lightning-button variant="success" label="Success" title="Successful action" onclick={show} class="slds-m-left_x-small"></lightning-button>
+    <!-- Iterator same as loop-->
+    {fruitList}
+    <template iterator:acc={lstAccounts}>
+        <p key={acc.value.Id} style="display:inline">
+            <lightning-badge label={acc.value.Name} class="slds-badge_inverse"></lightning-badge>
+        </p>
+    </template>
+
+    <!--  for Each loop  -->
+    <template for:each={fruitList} for:item="fruit">
+        <p key={fruit.Id}>
+            
+            <lightning-badge label={fruit} class="slds-badge_inverse"></lightning-badge>
+        </p>
+    </template>
+</template>

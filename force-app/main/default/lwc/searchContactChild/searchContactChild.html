@@ -1,0 +1,18 @@
+<template>
+   <lightning-card  >
+      <P>page value is : {page}</P>
+      <c-search-contact onnext={handleNext} onprev={handlePrev}></c-search-contact>
+   <!--   <lightning-layout>
+              <lightning-layout-item>
+                       <template if:true={strOutput}>
+                       <p><b>Name : </b>{strOutput.Name}</p>
+                       <p><b>Phone: </b>{strOutput.Phone}</p>
+                       </template>
+                       <template if:false={strOutput}>
+                       <p> Parent data problem</p>
+                        </template> 
+              </lightning-layout-item>   
+      </lightning-layout> -->
+    
+   </lightning-card>
+</template>

@@ -1,0 +1,6 @@
+.cursor{
+    cursor: pointer;
+}
+.cursor :hover{
+    border: 1px solid red;
+}

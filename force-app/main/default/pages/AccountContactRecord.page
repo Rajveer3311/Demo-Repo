@@ -1,0 +1,34 @@
+<apex:page Controller="AccountContactRecordVfClass" tabStyle="Account">
+    <apex:form >
+        <apex:outputPanel >Account details</apex:outputPanel>
+    <apex:repeat var="accountObj" value="{!accountList}">
+       <apex:pageBlock >
+        <apex:pageBlockSection title="Account Details">
+            <apex:pageBlockSectionItem >
+                Name:<apex:commandLink value="{!accountObj.Name}" action="/{!accountObj.id}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                Phone:<apex:outputField label="Phone" value="{!accountObj.Phone}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                SLAExpirationDate:<apex:outputField label="SLAExpirationDate" value="{!accountObj.SLAExpirationDate__c}"/> 
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        
+        <apex:repeat var="contObj" value="{!accountObj.Contacts}"> 
+            <apex:pageBlockSection title="Contact Details">
+                <apex:pageBlockSectionItem >
+                    Name:<apex:commandLink value="{!contObj.Name}" action="/{!contObj.id}"/>  
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Email:<apex:outputField label="Email" value="{!contObj.Email}"/>
+                </apex:pageBlockSectionItem>  
+                <apex:pageBlockSectionItem >
+                    Phone:<apex:outputField label="Phone" value="{!contObj.Phone}"/>
+                </apex:pageBlockSectionItem> 
+            </apex:pageBlockSection>
+        </apex:repeat> 
+           </apex:pageBlock>
+    </apex:repeat>
+    </apex:form>
+</apex:page>

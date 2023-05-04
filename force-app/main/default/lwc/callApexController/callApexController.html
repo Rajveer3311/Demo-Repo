@@ -1,0 +1,52 @@
+<template>
+   <lightning-card  variant="Narrow"  title="Call Apex Controller" icon-name="standard:account">
+       <lightning-layout multiple-rows>
+<!-- true false -->
+           <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+               <template if:true={name}>
+               {name}
+               </template>
+               <template if:false={name}>
+                name is not defined
+                </template>
+           </lightning-layout-item>
+<!-- list value -->
+           <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+               <template for:each={listVal} for:item="val">
+               <h1 key={val}>{val}</h1>
+               </template>
+           </lightning-layout-item>
+<!-- map value -->
+           <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+               <template for:each={city} for:item="cityVal">
+               <h1 key={cityVal.id}></h1>
+               {cityVal.id}
+               {cityVal.name}
+                </template>
+           </lightning-layout-item>
+ <!-- controller method values  -->       
+          <lightning-layout-item>
+              {getNameValueData}
+          </lightning-layout-item>
+<!-- imperative method -->
+          <lightning-layout-item>
+            <lightning-button variant="success" label="imperativeMethod" title="titleName" onclick={callImperativeMethod}></lightning-button>
+            <template if:true={contacts}>
+                <template for:each={contacts} for:item="contVal">
+                    <p key={contVal.Id}>{contVal.Name}</p>
+                    {contVal.Phone}
+                </template>
+            </template>
+            <template if:true={error}>
+                <c-error-panel errors={error}></c-error-panel>
+                <p>Contact is Empty</p>
+            </template>
+          </lightning-layout-item>
+
+       </lightning-layout>
+
+
+       
+       
+   </lightning-card>
+</template>

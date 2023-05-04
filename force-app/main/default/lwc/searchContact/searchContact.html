@@ -1,0 +1,36 @@
+<template>
+    {auraPassValue}
+    {message}
+    {vfMessage}
+    <lightning-card  variant="Narrow"  title="Find your contact" icon-name="standard:account">
+       <lightning-layout multiple-rows>
+
+         <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+            <lightning-input type="text" variant="standard" name="name" placeholder="Find Your Contact" onchange={searchData}></lightning-input>
+         </lightning-layout-item>
+         
+       </lightning-layout>
+       <lightning-layout>
+         
+                <template if:true={contactData}>
+                 <template for:each={contactData} for:item="data">
+                      <c-search-contact-child key = {data.Id} str-output={data}></c-search-contact-child> 
+                  <!--   <lightning-layout-item key = {data.key} size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                            <p>Name : {data.Name}</p>
+                            <p>Phone: {data.Phone}</p> 
+                          </lightning-layout-item> -->
+                 </template>
+                </template>
+                <template if:true={errors}>
+                    <p>we got error </p>
+                </template>
+         <lightning-layout-item >
+             <lightning-button variant="brand" label="handleNext" title="titleName" onclick={handleNext}></lightning-button>
+         </lightning-layout-item>      
+          <lightning-layout-item >
+             <lightning-button variant="brand" label="handlePrev" title="titleName" onclick={handlePrev}></lightning-button>
+         </lightning-layout-item>     
+         </lightning-layout>  
+        
+     </lightning-card>
+</template>

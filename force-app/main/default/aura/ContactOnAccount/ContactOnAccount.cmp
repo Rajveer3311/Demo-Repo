@@ -1,0 +1,23 @@
+<aura:component controller="ContactOnAccountAuraController">
+
+    <aura:attribute name="AccountList" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered" aria-label="Example table of Opportunities with vertical borders">
+         <tbody>
+                <ul>
+                    <aura:iteration items="{!v.AccountList}" var="acc">
+                        <li type="dice">Account Name : {!acc.Name}</li>
+                        <ul>
+                            <aura:iteration items="{!acc.Contacts}" var="con" indexVar="index">
+                                <li>First Name : {!con.FirstName}</li>
+                                <li>Last Name : {!con.LastName}</li>
+                            </aura:iteration>
+                        </ul>
+                        <hr/>
+                    </aura:iteration>
+                </ul>
+            </tbody>
+           
+        
+    </table>   
+</aura:component>
