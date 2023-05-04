@@ -1,4 +1,4 @@
-// when a  account is inserted at most 1 contact insert
+// when an account is inserted at most 1 contact insert
 /*public class AccountCreateController {
     public Account a{get;set;}
     public Contact b{get;set;}
